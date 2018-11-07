@@ -8,10 +8,10 @@ eureka:
     hostname: localhost
     prefer-ip-address: true
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # one eureka server
+      defaultZone: http://localhost:8762/eureka/ # two eureka server
   server:
     wait-time-in-ms-when-sync-empty: 0
     enable-self-preservation: false
