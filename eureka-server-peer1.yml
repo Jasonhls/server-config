@@ -16,8 +16,7 @@ eureka:
     wait-time-in-ms-when-sync-empty: 0
     enable-self-preservation: false
 management:
-  endpoint:
-    health:
-      enabled: true
-    info:
-      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: *
