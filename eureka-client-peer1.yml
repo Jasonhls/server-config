@@ -7,8 +7,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/ # three eureka server
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
